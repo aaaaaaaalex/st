@@ -1527,8 +1527,12 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 	/* draw the new one */
 	if (IS_SET(MODE_FOCUSED)) {
 		switch (win.cursor) {
-		case 7: /* st extension */
-			g.u = 0x2603; /* snowman (U+2603) */
+		case 7: /* custom cursor char */
+			g.u = cursorChar;
+			/* funky unicode chars will print with inverted colours, so swap bg and fg */
+			g.fg = defaultcs;
+			g.bg = defaultbg;
+
 			/* FALLTHROUGH */
 		case 0: /* Blinking Block */
 		case 1: /* Blinking Block (Default) */
