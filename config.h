@@ -97,29 +97,29 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
-	"#aa6f58",	// pupE fud brown
-	"green3",
+	"#d48a9d",	// pupE fud pink
+	"#a3de8a",	// pupE green
 	"#f5f383",	// fud b'ol yellow
-	"#90c5d6",	// pupE blu
-	"#e6d7e6",  // pupE purpl
+	"#5bbad9",	// pupE blu
+	"#e6d7e6",	// pupE purpl
 	"cyan3",
 	"gray90",
 
 	/* 8 bright colors */
 	"gray50",
-	"red",
+	"#9e9075",	// pupE fud brown
 	"green",
 	"#f5f383",	// fud b'ol yellow
-	"#90c5d6",	// pupE blu
-	"#e6d7e6",  // pupE purpl
+	"#5bbad9",	// pupE blu
+	"#e6d7e6", 	// pupE purpl
 	"cyan",
 	"white",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#aa6f58",	// pupE fud brown
-	
+	"#a6877b",	// pupE fud brown
+	"#424141",	// pupE dark grey
 };
 
 
@@ -128,7 +128,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 3;
-unsigned int defaultbg = 8;
+unsigned int defaultbg = 257;
 static unsigned int defaultcs = 3;
 static unsigned int defaultrcs = 1;
 
