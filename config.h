@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "agave Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -140,7 +140,7 @@ static unsigned int defaultrcs = 1;
  * 7: Use the unicode char defined by cursorChar
  */
 static unsigned int cursorshape = 7;
-static const unsigned int cursorChar = 0x276E;
+static const unsigned int cursorChar = '<';
 
 /*
  * Default columns and rows numbers
